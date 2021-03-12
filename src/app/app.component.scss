@@ -1,0 +1,15 @@
+.container {
+    background-color: burlywood;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    & textarea{
+       height: 50vh;
+       width: 100%; 
+    }
+    & label{
+        margin: 0 10px;
+    }
+}

@@ -1,5 +1,8 @@
 # Front-end coding challenge
 
+**Solution Hint:**
+You can use the stringified json in sample.json file to paste it in the textbox
+
 **Description:**
 
 Design and develop front-end that can render HTML forms dynamically based on provided JSON Objects.

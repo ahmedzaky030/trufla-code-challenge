@@ -1,0 +1,39 @@
+<div  class="container">
+  <div class="json-format">
+    <h3>Please paste your required json object here:</h3>
+    <textarea name="formJson" [formControl]="formJsonFormControl"></textarea>
+  </div>
+  <div class="form">
+    <h3>Hi here it is the generated form</h3>
+    
+    <form>
+      <div *ngFor="let control of ourForm?.controls">
+        <div *ngIf="control.type == 'text' || control.type == 'number' || control.type == 'date' || control.type == 'email' ">
+          <label>{{control.label}}</label>
+          <input [type]="control.type" [placeholder]="control.placeholder" [value]="control.initialValue" />
+        </div>
+        <div *ngIf="control.type == 'submit'">
+          <input [type]="control.type" [placeholder]="control.placeholder" [value]="control.label" (click)="control?.callbackFn()" />
+        </div>
+        <br/>
+        <div *ngIf="control.type == 'radio' || control.type == 'checkbox'">
+          <label>{{control.label}}</label>
+          <div *ngFor="let option of control?.options">
+            <label>{{option.text}}</label>
+            <input [type]= "control.type" [name]="control.name" [value]="option.id"/>
+          </div>
+          
+        </div>
+        <br />
+        <div *ngIf="control.type == 'select'">
+          <label>{{control.label}}</label>
+          <select>
+            <option>{{control.placeholder}}</option>
+            <option *ngFor="let option of control?.options" [value]="option?.id" [selected]="option?.isSelected" >{{option.text}}</option>
+          </select>
+        </div>
+        
+      </div>
+    </form>
+  </div>
+</div>
