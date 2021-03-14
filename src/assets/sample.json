@@ -1,2 +1,68 @@
-
-"{\n   \"controls\":[\n      {\n         \"type\":\"text\",\n         \"name\":\"firstName\",\n         \"label\":\" First Name\",\n         \"initialValue\":\"John Doe\",\n         \"placeholder\":\"Type your First name\"\n      },\n      {\n         \"type\":\"number\",\n         \"name\":\"age\",\n         \"label\":\"Age\",\n         \"initialValue\":\"\",\n         \"placeholder\":\"Type your Age\"\n      },\n      {\n         \"type\":\"date\",\n         \"name\":\"dob\",\n         \"label\":\" Date of Birth\",\n         \"placeholder\":\"Type your Date of birth\"\n      },\n      {\n         \"type\":\"email\",\n         \"name\":\"email\",\n         \"label\":\" Email\",\n         \"initialValue\":\"abc@example\",\n         \"placeholder\":\"Type your email\"\n      },\n      {\n         \"type\":\"radio\",\n         \"name\":\"maritalStatus\",\n         \"label\":\" Marital Status\",\n         \"placeholder\":\"\",\n         \"options\":[\n            {\n               \"id\":\"m\",\n               \"text\":\"Male\"\n            },\n            {\n               \"id\":\"f\",\n               \"text\":\"Female\"\n            }\n         ]\n      },\n      {\n         \"type\":\"checkbox\",\n         \"name\":\"workType\",\n         \"label\":\" Work Type\",\n         \"placeholder\":\"\",\n         \"options\":[\n            {\n               \"id\":\"r\",\n               \"text\":\"Remotely\"\n            },\n            {\n               \"id\":\"s\",\n               \"text\":\"On Site\"\n            }\n         ]\n      },\n      {\n         \"type\":\"select\",\n         \"name\":\"country\",\n         \"label\":\" Country\",\n         \"placeholder\":\"Please choose your country\",\n         \"options\":[\n            {\n               \"id\":\"1\",\n               \"text\":\"Egypt\"\n            },\n            {\n               \"id\":\"2\",\n               \"text\":\"Germany\"\n            },\n            {\n               \"id\":\"3\",\n               \"text\":\"KSA\",\n               \"isSelected\":\"true\"\n            }\n         ]\n      },\n      {\n         \"type\":\"submit\",\n         \"name\":\"submit\",\n         \"label\":\" Save\",\n         \"placeholder\":\"Type your Date of birth\"\n      }\n   ]\n}"
+{
+  "controls": [
+    {
+      "type": "text",
+      "name": "firstName",
+      "label": " First Name",
+      "initialValue": "John Doe",
+      "placeholder": "Type your First name"
+    },
+    {
+      "type": "number",
+      "name": "age",
+      "label": "Age",
+      "initialValue": "",
+      "placeholder": "Type your Age"
+    },
+    {
+      "type": "date",
+      "name": "dob",
+      "label": " Date of Birth",
+      "placeholder": "Type your Date of birth"
+    },
+    {
+      "type": "email",
+      "name": "email",
+      "label": " Email",
+      "initialValue": "abc@example",
+      "placeholder": "Type your email"
+    },
+    {
+      "type": "radio",
+      "name": "maritalStatus",
+      "label": " Marital Status",
+      "placeholder": "",
+      "options": [
+        { "id": "m", "text": "Male" },
+        { "id": "f", "text": "Female" }
+      ]
+    },
+    {
+      "type": "checkbox",
+      "name": "workType",
+      "label": " Work Type",
+      "placeholder": "",
+      "options": [
+        { "id": "r", "text": "Remotely" },
+        { "id": "s", "text": "On Site" }
+      ]
+    },
+    {
+      "type": "select",
+      "name": "country",
+      "label": " Country",
+      "placeholder": "Please choose your country",
+      "options": [
+        { "id": "1", "text": "Egypt" },
+        { "id": "2", "text": "Germany" },
+        { "id": "3", "text": "KSA", "isSelected": "true" }
+      ]
+    },
+    {
+      "type": "submit",
+      "name": "submit",
+      "label": " Save",
+      "placeholder": "Type your Date of birth"
+    }
+  ]
+}
